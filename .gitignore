@@ -6,6 +6,7 @@ venv
 .vscode
 *.pyc
 *.db
+node_modules/
 modules/__pycache__/
 modules/*pycache*
 reports/html/
