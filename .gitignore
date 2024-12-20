@@ -3,6 +3,7 @@ runtime/*
 venv
 .env
 .idle
+.vscode
 *.pyc
 modules/__pycache__/
 modules/*pycache*
