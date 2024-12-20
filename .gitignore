@@ -5,6 +5,7 @@ venv
 .idle
 .vscode
 *.pyc
+*.db
 modules/__pycache__/
 modules/*pycache*
 reports/html/
