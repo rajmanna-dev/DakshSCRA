@@ -28,13 +28,13 @@
 
 ## Introduction
 
-The [Daksh SCRA](https://github.com/coffeeandsecurity/DakshSCRA) is a Source Code Review Assist Tool enhances the efficiency of the source code review process.
-Rather than flagging everything as a potential issue, Daksh SCRA promotes thoughtful analysis, encouraging investigation and confirmation. Using this approach reduces the confusion and wasted time associated with false positives.
+The [Daksh SCRA Tool](https://github.com/coffeeandsecurity/DakshSCRA) is built to enhance the efficiency of the source code review process, providing a well-structured and organized approach for code reviewers.
+
+Rather than indiscriminately flagging everything as a potential issue, Daksh SCRA promotes thoughtful analysis, urging the investigation and confirmation of potential problems. This approach mitigates the scramble to tag every potential concern as a bug, cutting back on the confusion and wasted time spent on false positives.
+
+What sets Daksh SCRA apart is its emphasis on avoiding unnecessary bug tagging. Unlike conventional methods, it advocates for thorough investigation and confirmation of potential issues before tagging them as bugs. This approach helps mitigate the issue of false positives, which often consume valuable time and resources, thereby fostering a more productive and efficient code review process.
 
 ## Getting Started
-
-> Check our video tutorial about using Daksh SCRA, [How to scan scripts and generate security reports with Daksh SCRA]().
-
 
 ### Setup DakshSCRA
 
@@ -163,7 +163,6 @@ $ python3 dakshscra.py
 ```
 
 ## Reports
-![](https://github.com/user-attachments/assets/eec749fb-db99-4c38-a00f-4bebd6930350)
 
 The tool generates reports in three formats: HTML, PDF, and TEXT. Although the HTML and PDF reports are still being improved, they are currently in a reasonably good state. With each subsequent iteration, these reports will continue to be refined and improved even further.
 
@@ -212,6 +211,6 @@ Feel free to contribute to the DakshSCRA project, submit any issues on our GitHu
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?style=flat-square&logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/coffeeandsecurity/DakshSCRA)
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?style=flat-square&logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/coffeeandsecurity/DakshSCRA&title=Daksh%20SCRA%20A%20Source%20Code%20Review%20Assist%20Tool)
 
-## 🔑 License
+## License
 
 DakshSCRA is a Source Code Review Assist Tool. It is a free and open-source software licensed under the [GPL](LICENSE).
