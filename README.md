@@ -213,4 +213,4 @@ Feel free to contribute to the DakshSCRA project, submit any issues on our GitHu
 
 ## License
 
-DakshSCRA is a Source Code Review Assist Tool. It is a free and open-source software licensed under the [GPL](LICENSE).
+DakshSCRA is a Source Code Review Assist Tool. It is a free and open-source software licensed under the [GPL](https://github.com/coffeeandsecurity/DakshSCRA/blob/main/README.md).
