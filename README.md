@@ -25,6 +25,14 @@
     <img src="https://badgen.net/github/forks/coffeeandsecurity/DakshSCRA?style=flat-square" alt="DakshSCRA GitHub Forks">
   </a>
 </div>
+<br/>
+
+```
+Author: 	
+- Debasis Mohanty (d3basis.m0hanty@gmail.com)
+- Twitter: @coffeensecurity
+- www.coffeeandsecurity.com
+```
 
 ## Introduction
 
@@ -38,7 +46,7 @@ What sets Daksh SCRA apart is its emphasis on avoiding unnecessary bug tagging. 
 
 ### Setup DakshSCRA
 
-Before using DakshSCRA, make sure to install Python3 and the packages through the command line using pip.
+Before using DakshSCRA, make sure to install [Python3](https://www.python.org/downloads/) and the packages through the command line using [pip](https://pip.pypa.io/en/stable/installation/).
 DakshSCRA software is open source. We are working on improving its code and documentation.
 
 #### 1. Clone the repository
@@ -61,11 +69,10 @@ $ virtualenv -p python3 venv
 $ source ./venv/bin/activate
 ```
 
-#### 3. Install Required Libraries in the Virtual Environment
+#### 3. Install All Dependencies
 
 ```bash
-# Install all dependencies
-$ pip install -r ./requirements.txt
+(venv) $ pip install -r ./requirements.txt
 ```
 
 ## Features
@@ -80,38 +87,38 @@ $ pip install -r ./requirements.txt
 
 > While this tool has progressed beyond its early stages, it has reached a usable and effective state. However, active enhancements are underway, and several new features and improvements are expected soon.
 
-Refer to the wiki for the tool setup and usage details - [DakshSCRA Wiki](https://github.com/coffeeandsecurity/DakshSCRA/wiki).
+Refer to the wiki for the tool setup, functionalities and usage details - [DakshSCRA Wiki](https://github.com/coffeeandsecurity/DakshSCRA/wiki).
 
 ## Supported Languages and Frameworks
 
-DakshSCRA supports a wide range of programming languages. Here are some of the popular languages that you can scan your script with DakshSCRA:
+DakshSCRA supports a wide range of programming languages and frameworks. Here are some of the popular languages and frameworks that you can scan your source code with DakshSCRA Tool:
 
 <p align="left">
-  <img width="80" height="80" src="https://img.icons8.com/color/80/javascript--v1.png" alt="javascript--v1"/>
-  <img width="80" height="80" src="https://img.icons8.com/color/80/php.png" alt="php"/>
-  <img width="80" height="80" src="https://img.icons8.com/color/80/net-framework.png" alt="net-framework"/>
-  <img width="80" height="80" src="https://img.icons8.com/color/80/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
-  <img width="80" height="80" src="https://img.icons8.com/color/80/kotlin.png" alt="kotlin"/>
+  <img width="65" height="65" src="https://img.icons8.com/color/65/javascript--v1.png" alt="javascript--v1"/>
+  <img width="65" height="65" src="https://img.icons8.com/color/65/php.png" alt="php"/>
+  <img width="65" height="65" src="https://img.icons8.com/color/65/net-framework.png" alt="net-framework"/>
+  <img width="65" height="65" src="https://img.icons8.com/color/65/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
+  <img width="65" height="65" src="https://img.icons8.com/color/65/kotlin.png" alt="kotlin"/>
   <br>
-  <img width="80" height="80" src="https://img.icons8.com/color/80/python--v1.png" alt="python--v1"/>
-  <img width="80" height="80" src="https://img.icons8.com/color/80/golang.png" alt="golang"/>
-  <img width="80" height="80" src="https://img.icons8.com/color/80/c-programming.png" alt="c-programming"/>
-  <img width="80" height="80" src="https://img.icons8.com/color/80/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>
-  <img width="80" height="80" src="https://img.icons8.com/color/80/android-os.png" alt="android-os"/>
+  <img width="65" height="65" src="https://img.icons8.com/color/65/python--v1.png" alt="python--v1"/>
+  <img width="65" height="65" src="https://img.icons8.com/color/65/golang.png" alt="golang"/>
+  <img width="65" height="65" src="https://img.icons8.com/color/65/c-programming.png" alt="c-programming"/>
+  <img width="65" height="65" src="https://img.icons8.com/color/65/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>
+  <img width="65" height="65" src="https://img.icons8.com/color/65/android-os.png" alt="android-os"/>
 </p>
 
 ## Usage
 
-1. To view the help page:
+1. To get the help page:
 
 ```bash
 # Show helps
-$ python3 dakshscra.py -h
+(venv) $ python3 dakshscra.py -h
 ```
 
-2. Some useful flags:
+2. Supported options:
 
-```notepad
+```
 usage: usage: dakshscra.py [-h] [-r RULE_FILE] [-f FILE_TYPES] [-v] [-t TARGET_DIR] [-l {R,RF}] [-recon] [-estimate]
 
 -r    [RULE_FILE], Specify platform-specific rule name | Default: auto
@@ -136,7 +143,7 @@ usage: usage: dakshscra.py [-h] [-r RULE_FILE] [-f FILE_TYPES] [-v] [-t TARGET_D
 $ python3 dakshscra.py
 ```
 
-#### Useful flags
+#### With options
 
 ```bash
 # '-f' [optional]. If not specified, it will default to the corresponding filetypes of the selected rule:
@@ -202,7 +209,10 @@ While this tool was quietly published on GitHub after the 2022 training, its off
 
 ## Community
 Our developer community is the backbone of the ongoing Daksh SCRA project. We sincerely welcome you to join our community, participate in the conversation and stay connected with us for the latest updates.
-Feel free to contribute to the DakshSCRA project, submit any issues on our GitHub page.
+
+Feel free to contribute to the DakshSCRA project, submit any issues on our GitHub page. Read our [Contribution guidelines](https://github.com/coffeeandsecurity/DakshSCRA/wiki/Contribution-guidelines).
+
+If you find any bugs, report them to [d3basis.m0hanty@gmail.com](mailto:d3basis.m0hanty@gmail.com).
 
 > Please consider sharing your experience or thoughts about [DakshSCRA]([https://github.com/rajmanna-dev/DakshSCRA/](https://github.com/coffeeandsecurity/DakshSCRA)) with the border Open Source community. It really does help!
 
