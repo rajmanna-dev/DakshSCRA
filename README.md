@@ -28,7 +28,7 @@
 <br/>
 
 ```
-Author: 	
+Author:
 - Debasis Mohanty (d3basis.m0hanty@gmail.com)
 - Twitter: @coffeensecurity
 - www.coffeeandsecurity.com
@@ -46,8 +46,7 @@ What sets Daksh SCRA apart is its emphasis on avoiding unnecessary bug tagging. 
 
 ### Setup DakshSCRA
 
-Before using DakshSCRA, make sure to install [Python3](https://www.python.org/downloads/) and the packages through the command line using [pip](https://pip.pypa.io/en/stable/installation/).
-DakshSCRA software is open source. We are working on improving its code and documentation.
+Before using DakshSCRA, make sure you have installed [Python3](https://www.python.org/downloads/) and the packages through the command line using [pip](https://pip.pypa.io/en/stable/installation/).
 
 #### 1. Clone the repository
 
@@ -72,6 +71,7 @@ $ source ./venv/bin/activate
 #### 3. Install All Dependencies
 
 ```bash
+# Install dependencies after activating the virtualenv
 (venv) $ pip install -r ./requirements.txt
 ```
 
@@ -118,55 +118,53 @@ DakshSCRA supports a wide range of programming languages and frameworks. Here ar
 
 2. Supported options:
 
+```bash 
+usage: dakshscra.py [-h] [-r RULE_FILE] [-f FILE_TYPES] [-v] [-t TARGET_DIR] [-l {R,RF}] [-recon] [-estimate]
 ```
-usage: usage: dakshscra.py [-h] [-r RULE_FILE] [-f FILE_TYPES] [-v] [-t TARGET_DIR] [-l {R,RF}] [-recon] [-estimate]
 
--r    [RULE_FILE], Specify platform-specific rule name | Default: auto
-
--f    [FILE_TYPES], Specify file types to scan
-
--v    Specify verbosity level {'-v', '-vv', '-vvv'}
-
--t    [TARGET_DIR], Specify target directory path
-
--l {R,RF} | --list {R,RF}    List rules [R] OR rules and filetypes [RF]
-
--recon    Detects platform, framework, and programming language used
-
--estimate    Estimate efforts required for code review
-```
+| Option    | Stands         | Requirement | Default Value  | Extended Value                                       | Definition                                                 |
+| --------- | -------------- | ----------- | -------------- | ---------------------------------------------------- | ---------------------------------------------------------- |
+| -r        | RULE_FILE      | Required    | N/A            | `auto`, Single and Multiple platform rules           | Specify platform-specific rule name                        |
+| -f        | FILE_TYPES     | Optional    | N/A            | `custom`                                             | Explicitly specify file types to scan                      |
+| -v        | Verbosity      | Optional    | `-v`           | {`-v`, `-vv`, `-vvv`}                                | Specify verbosity level                                    |
+| -t        | TARGET_DIR     | Required    | N/A            | N/A                                                  | Specify target directory path                              |
+| -l        | RULES_LIST     | Optional    | N/A            | {`R`, `RF`}                                          | List rules [R] OR rules and filetypes [RF]                 |
+| -recon    | Reconnaissance | Optional    | N/A            | N/A                                                  | Detects platform, framework, and programming language used |
+| -estimate | Estimate       | Optional    | N/A            | N/A                                                  | Estimate efforts required for code review                  |
 
 ### Example Usage
 
 ```bash
 # To view tool usage along with examples
-$ python3 dakshscra.py
+(venv) $ python3 dakshscra.py
 ```
 
 #### With options
 
 ```bash
-# '-f' [optional]. If not specified, it will default to the corresponding filetypes of the selected rule:
-
--r php -f dotnet -t /path_to_source_dir
-
--r php -f custom -t /path_to_source_dir
-
 # '-r' (single or multiple) for platform-specific rules:
 
--r auto -t /source_dir_path    # Auto-detect Platforms
+-r auto -t /source_dir_path    # Auto-detect the project platform rules
 
--r php -t /source_dir_path    # Single platform
+-r php -t /source_dir_path    # Declear Single platform rule
 
--r php,java,cpp -t /source_dir_path    # Multiple platforms
+-r php,java,cpp -t /source_dir_path    # Declear Multiple platform rules
 
--recon -r php -t /path_to_source_dir  # Perform reconnaissance and rule-based scanning
+# '-f' is optional. If not specified, it will default to the corresponding filetypes of the selected rule.
+
+-r php -f dotnet -t /path_to_source_dir    # Declear filetype explicitly under specific rule (Optional)
+
+-r php -f <custom> -t /path_to_source_dir    # Define custom filetype
+
+# '-recon' perform reconnaissance and rule-based scanning
+
+-recon -r php -t /path_to_source_dir    # Perform reconnaissance with rule based platform
 
 -recon -t /path_to_source_dir    # Perform only reconnaissance
 
 # Verbosity: '-v' is default, '-vvv' will display all rules check within each rule category.
 
--r php -vv -t /path_to_source_dir
+-r php -vv -t /path_to_source_dir    # Perform verbosity at level 2
 ```
 
 ## Reports
@@ -175,33 +173,33 @@ The tool generates reports in three formats: HTML, PDF, and TEXT. Although the H
 
 ### Scanning (Areas of Security Concerns) Reports
 
-###### HTML Report:
+###### HTML Report Path:
 
 - `DakshSCRA/reports/html/report.html`
 
-###### PDF Report:
+###### PDF Report Path:
 
 - `DakshSCRA/reports/html/report.pdf`
 
-###### RAW TEXT Based Reports:
+###### RAW TEXT Based Report Paths:
 
 - Areas of Interest - Identified Patterns : `DakshSCRA/reports/text/areas_of_interest.txt`
 - Areas of Interest - Project Files: `DakshSCRA/reports/text/filepaths_aoi.txt`
 - Identified Project Files: `DakshSCRA/runtime/filepaths.txt`
 
-### Reconnaissance (Recon) Report
+###### Reconnaissance (Recon) Report Path:
 
 - Reconnaissance Summary: `/reports/text/recon.txt`
 
 Note: Currently, the reconnaissance report is created in a text format. However, in upcoming releases, the plan is to incorporate it into the vulnerability scanning report, which will be available in both HTML and PDF formats.
 
-### Code Review Effort Estimation Report
+###### Code Review Effort Estimation Report Path:
 
 - Effort estimation report: `/reports/html/estimation.html`
 
 Note: Currently, the report is generated in HTML format. However, in future releases, there are plans to also provide it in PDF format.
 
-## Debut
+## Debut (2022-Present)
 
 Daksh SCRA was initially introduced during a source code review training session I conducted at Black Hat USA 2022 (August 6 - 9), where it was subtly presented to a specific audience. However, this introduction was carried out with a low-profile approach, avoiding any major announcements.
 
