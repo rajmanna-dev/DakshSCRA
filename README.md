@@ -122,10 +122,10 @@ DakshSCRA supports a wide range of programming languages and frameworks. Here ar
 usage: dakshscra.py [-h] [-r RULE_FILE] [-f FILE_TYPES] [-v] [-t TARGET_DIR] [-l {R,RF}] [-recon] [-estimate]
 ```
 
-| Option    | Stands         | Requirement | Default Value  | Extended Value                                       | Definition                                                 |
+| Option    | Stands         | Requirement | Default Values | Extended Values                                      | Definition                                                 |
 | --------- | -------------- | ----------- | -------------- | ---------------------------------------------------- | ---------------------------------------------------------- |
 | -r        | RULE_FILE      | Required    | N/A            | `auto`, Single and Multiple platform rules           | Specify platform-specific rule name                        |
-| -f        | FILE_TYPES     | Optional    | N/A            | `custom`                                             | Explicitly specify file types to scan                      |
+| -f        | FILE_TYPES     | Optional    | N/A            | `custom`, Other supported filetypes                  | Explicitly specify file types to scan                      |
 | -v        | Verbosity      | Optional    | `-v`           | {`-v`, `-vv`, `-vvv`}                                | Specify verbosity level                                    |
 | -t        | TARGET_DIR     | Required    | N/A            | N/A                                                  | Specify target directory path                              |
 | -l        | RULES_LIST     | Optional    | N/A            | {`R`, `RF`}                                          | List rules [R] OR rules and filetypes [RF]                 |
