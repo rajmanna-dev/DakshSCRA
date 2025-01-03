@@ -124,7 +124,7 @@ usage: dakshscra.py [-h] [-r RULE_FILE] [-f FILE_TYPES] [-v] [-t TARGET_DIR] [-l
 
 | Option    | Stands         | Requirement | Default Values | Extended Values                                      | Definition                                                 |
 | --------- | -------------- | ----------- | -------------- | ---------------------------------------------------- | ---------------------------------------------------------- |
-| -r        | RULE_FILE      | Required    | N/A            | `auto`, Single and Multiple platform rules           | Specify platform-specific rule name                        |
+| -r        | RULE_FILE      | Required    | N/A            | `auto`, Single and Multiple platform rules           | Specify platform-specific rule name (`auto` can detect platform automatically)                        |
 | -f        | FILE_TYPES     | Optional    | N/A            | `custom`, Other supported filetypes                  | Explicitly specify file types to scan                      |
 | -v        | Verbosity      | Optional    | `-v`           | {`-v`, `-vv`, `-vvv`}                                | Specify verbosity level                                    |
 | -t        | TARGET_DIR     | Required    | N/A            | N/A                                                  | Specify target directory path                              |
